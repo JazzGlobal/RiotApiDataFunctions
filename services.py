@@ -29,9 +29,7 @@ def getMatchByGameId(gameId):
 #Returns participantId of specified 'summonerObj' within specified 'game'
 #Returns -1 if summoner could not be found in game
 def getParticipantId(summonerObj, game):
-
 	#Compares the accountId field to that of each player in the game until a match is found. Then returns participantId of the matching player.
-	print("Running Service: getParticipantId")
 	print("AccountId to Match: ", summonerObj['accountId'])
 	#Iterator set to 0 and will loop through at max 10 times. There are only 10 players per match
 	i = 0
